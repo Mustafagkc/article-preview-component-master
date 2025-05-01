@@ -1,0 +1,112 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Light-Grayish-Blue);
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  margin: 30px;
+ 
+  flex-direction: column;
+  border-radius: 20px;
+  font-weight: 500;
+}
+#furniture-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-radius: 20px 20px 0 0;
+}
+.card {
+  display: block;
+  padding: 30px;
+  margin: 20px;
+}
+h2 {
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+p.text {
+  color: var(--Grayish-Blue);
+  font-weight: 550;
+  word-spacing: 1px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer #michelle-img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.date {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  color: var(--Desaturated-Dark-Blue);
+}
+time {
+  color: var(--Grayish-Blue);
+}
+
+.footer button #share-icon {
+  width: 20px;
+  margin-left: 100px;
+}
+
+.card-icons {
+  background-color: var(--Very-Dark-Grayish-Blue);
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.card-icons p {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+.active {
+  display: flex !important;
+}
+
+.none{
+
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 150px;
+  }
+  #furniture-img{
+    width: 35%;
+
+  }
+}
